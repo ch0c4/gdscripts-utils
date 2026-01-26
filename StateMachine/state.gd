@@ -1,16 +1,19 @@
-@abstract
 class_name State extends Node
 
 @warning_ignore("unused_signal")
 signal transitionned(state: State, new_state: String)
 
-@abstract func enter() -> void
+func enter() -> void:
+    pass
 
 
-@abstract func exit() -> void
+func exit() -> void:
+    pass
 
 
-@abstract func update(delta: float) -> void
+func update(_delta: float) -> void:
+    pass
 
 
-@abstract func physics_update(delta: float) -> void
+func physics_update(_delta: float) -> void:
+    pass
