@@ -50,5 +50,5 @@ func on_child_transition(state: State, new_state_name: String) -> void:
 		state_label.text = new_state_name
 
 
-func force_transitition_to(state_name: String) -> void:
+func force_transition_to(state_name: String) -> void:
 	on_child_transition(current_state, state_name)
